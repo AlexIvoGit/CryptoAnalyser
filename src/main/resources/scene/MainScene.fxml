@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="768" prefWidth="1024" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.javarush.ivoylovsky.cryptoanalyser.controller.MainSceneController">
+   <TextArea fx:id="textArea" layoutX="29.0" layoutY="24.0" prefHeight="200.0" prefWidth="774.0" promptText="Введите текст для шифровки / дешифровки">
+      <font>
+         <Font size="12.0" />
+      </font>
+   </TextArea>
+   <Button layoutX="816.0" layoutY="96.0" mnemonicParsing="false" onAction="#clickEncrypt" prefHeight="25.0" prefWidth="164.0" text="Зашифровать" />
+   <Button layoutX="816.0" layoutY="142.0" mnemonicParsing="false" onAction="#clickDecrypt" prefHeight="25.0" prefWidth="164.0" text="Расшифровать" />
+   <TextField fx:id="keyField" editable="false" layoutX="858.0" layoutY="54.0" prefHeight="25.0" prefWidth="80.0" promptText="Ключ" text="0" />
+   <TextField fx:id="pathToFileEncrypt" layoutX="29.0" layoutY="253.0" prefHeight="40.0" prefWidth="707.0" promptText="Путь к файлу для шифровки" />
+   <TextField fx:id="pathToFileDecrypt" layoutX="29.0" layoutY="309.0" prefHeight="40.0" prefWidth="707.0" promptText="Путь к файлу для расшифровки" />
+   <Button layoutX="816.0" layoutY="54.0" mnemonicParsing="false" onAction="#upKey" text="▲" />
+   <Button layoutX="950.0" layoutY="54.0" mnemonicParsing="false" onAction="#downKey" text="▼" />
+   <Button layoutX="816.0" layoutY="261.0" mnemonicParsing="false" onAction="#encryptFile" prefHeight="25.0" prefWidth="164.0" text="Зашифровать файл" />
+   <Button layoutX="816.0" layoutY="317.0" mnemonicParsing="false" onAction="#decryptFile" prefHeight="25.0" prefWidth="164.0" text="Расшифровать файл" />
+   <Button layoutX="748.0" layoutY="261.0" mnemonicParsing="false" onAction="#selectPathToFileEncrypt" prefHeight="25.0" prefWidth="52.0" text="..." />
+   <Button layoutX="748.0" layoutY="316.0" mnemonicParsing="false" onAction="#selectPathToFileDecrypt" prefHeight="25.0" prefWidth="52.0" text="..." />
+   <Button layoutX="816.0" layoutY="185.0" mnemonicParsing="false" onAction="#clickBruteforce" prefHeight="25.0" prefWidth="164.0" text="BruteForce" />
+</AnchorPane>
